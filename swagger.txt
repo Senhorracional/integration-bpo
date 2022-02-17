@@ -1,0 +1,11 @@
+composer require zircote/swagger-php
+
+https://blog.quickadminpanel.com/laravel-api-documentation-with-openapiswagger/
+
+composer require darkaonline/l5-swagger
+
+php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
+L5_SWAGGER_CONST_HOST=http://project.test/api/v1 .env
+php artisan l5-swagger:generate
+
+http://127.0.0.1:8000/api/documentation

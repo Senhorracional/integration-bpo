@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Integrador BPO",
+        "description": "Integrador para integrar BPO as seguradoras",
+        "contact": {
+            "email": "nathan.frc@hotmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://project.test/api/v1",
+            "description": "BPO Integration"
+        }
+    ],
+    "paths": {
+        "/V1/course": {
+            "get": {
+                "tags": [
+                    "course"
+                ],
+                "summary": "Returns a list of courses",
+                "description": "Returns a object of courses",
+                "operationId": "612ddccd7e551ddbf8f7be86f39007b8",
+                "responses": {
+                    "200": {
+                        "description": "A list with courses"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Projects",
+            "description": "API Endpoints of Projects"
+        }
+    ],
+    "security": [
+        []
+    ]
+}
